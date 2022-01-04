@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom'
 
 import HomeApp from '../Home/App.js'
 import AboutMeApp from '../AboutMe/App.js'
@@ -27,6 +27,7 @@ const StyleMenu = styled.nav`
   display: flex;
   justify-content: space-between;
   z-index: 10;
+  background-color: #ffffff;
   .logo {
     padding: 0;
     position: fixed;
@@ -100,35 +101,15 @@ const Burger = () => {
             </a></p>
         </ul>
     </Div>
-    <div>
-      <Route path='/' component={Home} />
-      <Route path='/AboutMe/' component={AboutMe} />
-      <Route path='/Product/' component={Product} />
-      <Route path='/Photo/' component={Photo} />
-      <Route path='/Media/' component={Media} />
-  </div>
+    <Routes>
+      <Route path='/' element={<HomeApp/>} />
+      <Route path='AboutMe' element={<AboutMeApp/>} />
+      <Route path='Product' element={<ProductApp/>} />
+      <Route path='Photo' element={<PhotoApp/>} />
+      <Route path='Media' element={<MediaApp/>} />
+  </Routes>
     </BrowserRouter>
   )
 }
-
-const Home = () =>(
-  <HomeApp/>
-)
-
-const AboutMe = () =>(
-  <AboutMeApp/>
-)
-
-const Product = () =>(
-  <ProductApp/>
-)
-
-const Photo = () =>(
-  <PhotoApp/>
-)
-
-const Media = () =>(
-  <MediaApp/>
-)
 
 export default Burger

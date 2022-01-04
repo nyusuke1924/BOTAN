@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom'
 
 import HomeApp from '../Home/App'
 import AboutMeApp from '../AboutMe/App'
@@ -51,6 +51,7 @@ const Div = styled.div`
     background-color: #0D2538;
     opacity: 0.9;
     z-index: 20;
+    background-color: #ffffff;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -201,37 +202,15 @@ const Burger = () => {
          </ul>
     </Div>
 
-    <div>
-      <Route path='/' component={Home} />
-      <Route path='/AboutMe' component={AboutMe} />
-      <Route path='/Product' component={Product} />
-      <Route path='/Photo' component={Photo} />
-      <Route path='/Media' component={Media} />
-    </div>
+    <Routes>
+      <Route path='/' element={<HomeApp/>} />
+      <Route path='AboutMe' element={<AboutMeApp/>} />
+      <Route path='Product' element={<ProductApp/>} />
+      <Route path='Photo' element={<PhotoApp/>} />
+      <Route path='Media' element={<MediaApp/>} />
+    </Routes>
     </BrowserRouter>
     </>
 )}
-
-const Home = () =>(
-  <HomeApp/>
-)
-
-const AboutMe = () =>(
-  <AboutMeApp/>
-)
-
-const Product = () =>(
-  <ProductApp/>
-)
-
-const Photo = () =>(
-  <PhotoApp/>
-)
-
-
-const Media = () =>(
-  <MediaApp/>
-)
-
 
 export default Burger
