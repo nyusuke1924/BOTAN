@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BOTAN/static/css/main.cf1e69c5.css",
-    "main.js": "/BOTAN/static/js/main.d491480f.js",
+    "main.js": "/BOTAN/static/js/main.e307a759.js",
     "static/js/787.bd4f617c.chunk.js": "/BOTAN/static/js/787.bd4f617c.chunk.js",
     "static/media/image11.jpg": "/BOTAN/static/media/image11.cf68e13d40556c73c065.jpg",
     "static/media/image44.jpg": "/BOTAN/static/media/image44.46534ad9187d51edd06c.jpg",
@@ -49,16 +49,16 @@
     "static/media/image25.jpg": "/BOTAN/static/media/image25.c872b7d003e46707debd.jpg",
     "static/media/instagram-mlogo.png": "/BOTAN/static/media/instagram-mlogo.7f6395186ce82b636544.png",
     "static/media/twitter-mlogo.png": "/BOTAN/static/media/twitter-mlogo.8cd17b31eda78d1c6000.png",
+    "index.html": "/BOTAN/index.html",
     "static/media/instagram-logo.svg": "/BOTAN/static/media/instagram-logo.aea97eb598cdeb3abc9171c03922b09a.svg",
     "static/media/twitter-logo.svg": "/BOTAN/static/media/twitter-logo.53378cebb66624b34ac868a07ffcd114.svg",
-    "index.html": "/BOTAN/index.html",
     "static/media/facebook-logo.svg": "/BOTAN/static/media/facebook-logo.90b58c1d2a04da9f9ed04a2a936e2800.svg",
     "main.cf1e69c5.css.map": "/BOTAN/static/css/main.cf1e69c5.css.map",
-    "main.d491480f.js.map": "/BOTAN/static/js/main.d491480f.js.map",
+    "main.e307a759.js.map": "/BOTAN/static/js/main.e307a759.js.map",
     "787.bd4f617c.chunk.js.map": "/BOTAN/static/js/787.bd4f617c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf1e69c5.css",
-    "static/js/main.d491480f.js"
+    "static/js/main.e307a759.js"
   ]
 }
