@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "//nyusuke1924.github.io/BOTAN/static/css/main.cf1e69c5.css",
-    "main.js": "//nyusuke1924.github.io/BOTAN/static/js/main.f1704e29.js",
+    "main.js": "//nyusuke1924.github.io/BOTAN/static/js/main.9e6237f6.js",
     "static/js/787.bd4f617c.chunk.js": "//nyusuke1924.github.io/BOTAN/static/js/787.bd4f617c.chunk.js",
     "static/media/image11.jpg": "//nyusuke1924.github.io/BOTAN/static/media/image11.cf68e13d40556c73c065.jpg",
     "static/media/image44.jpg": "//nyusuke1924.github.io/BOTAN/static/media/image44.46534ad9187d51edd06c.jpg",
@@ -54,11 +54,11 @@
     "static/media/twitter-logo.svg": "//nyusuke1924.github.io/BOTAN/static/media/twitter-logo.53378cebb66624b34ac868a07ffcd114.svg",
     "static/media/facebook-logo.svg": "//nyusuke1924.github.io/BOTAN/static/media/facebook-logo.90b58c1d2a04da9f9ed04a2a936e2800.svg",
     "main.cf1e69c5.css.map": "//nyusuke1924.github.io/BOTAN/static/css/main.cf1e69c5.css.map",
-    "main.f1704e29.js.map": "//nyusuke1924.github.io/BOTAN/static/js/main.f1704e29.js.map",
+    "main.9e6237f6.js.map": "//nyusuke1924.github.io/BOTAN/static/js/main.9e6237f6.js.map",
     "787.bd4f617c.chunk.js.map": "//nyusuke1924.github.io/BOTAN/static/js/787.bd4f617c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf1e69c5.css",
-    "static/js/main.f1704e29.js"
+    "static/js/main.9e6237f6.js"
   ]
 }
