@@ -202,7 +202,7 @@ const Burger = () => {
     </Div>
 
     <Switch>
-      <Route exact path='/' component={Home} />
+      <Route exact path='' component={Home} />
       <Route path='/AboutMe' component={AboutMe} />
       <Route path='/Product' component={Product} />
       <Route path='/Photo' component={Photo} />
