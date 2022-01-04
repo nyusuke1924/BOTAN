@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-import HomeApp from '../Home/App'
-import AboutMeApp from '../AboutMe/App'
-import ProductApp from '../Product/App'
-import PhotoApp from '../Photo/App'
-import MediaApp from '../Media/App'
+import HomeApp from '../Home/App.js'
+import AboutMeApp from '../AboutMe/App.js'
+import ProductApp from '../Product/App.js'
+import PhotoApp from '../Photo/App.js'
+import MediaApp from '../Media/App.js'
 
 import icon from './Images/main-logo.png';
 import iicon from './Images/instagram-logo.svg';
@@ -100,13 +100,13 @@ const Burger = () => {
             </a></p>
         </ul>
     </Div>
-    <Switch>
-      <Route exact path='' component={Home} />
+    <div>
+      <Route path='/' component={Home} />
       <Route path='/AboutMe/' component={AboutMe} />
       <Route path='/Product/' component={Product} />
       <Route path='/Photo/' component={Photo} />
       <Route path='/Media/' component={Media} />
-  </Switch>
+  </div>
     </BrowserRouter>
   )
 }

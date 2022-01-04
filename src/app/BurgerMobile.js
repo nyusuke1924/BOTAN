@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 import HomeApp from '../Home/App'
 import AboutMeApp from '../AboutMe/App'
@@ -201,13 +201,13 @@ const Burger = () => {
          </ul>
     </Div>
 
-    <Switch>
-      <Route exact path='' component={Home} />
+    <div>
+      <Route path='/' component={Home} />
       <Route path='/AboutMe' component={AboutMe} />
       <Route path='/Product' component={Product} />
       <Route path='/Photo' component={Photo} />
       <Route path='/Media' component={Media} />
-    </Switch>
+    </div>
     </BrowserRouter>
     </>
 )}

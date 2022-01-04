@@ -1,8 +1,8 @@
 import React from 'react';
 import MediaQuery from "react-responsive";
 
-import BurgerDesktop from './BurgerDesktop';
-import BurgerMobile from './BurgerMobile';
+import BurgerDesktop from './BurgerDesktop.js';
+import BurgerMobile from './BurgerMobile.js';
 
 function BurgerApp() {
   
