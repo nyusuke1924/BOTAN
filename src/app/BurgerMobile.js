@@ -51,7 +51,6 @@ const Div = styled.div`
     background-color: #0D2538;
     opacity: 0.9;
     z-index: 20;
-    background-color: #ffffff;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
