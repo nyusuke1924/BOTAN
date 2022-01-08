@@ -8,8 +8,12 @@
         <title>404</title>
 
         <script>
-            sessionStorage.setItem('path', location.pathname);
-            location.replace('./');
+            const SEGMENT_COUNT = 0;
+            const loc = window.location
+            const origin = loc.origin;  //=> https://yourname.github.io
+            const path = loc.href.substr(origin.length + 1);  //=> repo-name/book/123
+            const url = origin + '/' + path;
+            loc.replace(url);
         </script>
         
     </head>
