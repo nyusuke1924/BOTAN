@@ -31,6 +31,8 @@ const Div = styled.div `
 .text_box{
   width: calc((100vh - 20px - var(--Header-Size)) * 3/2);
   height: 100%;
+  max-width: 900px;
+  min-width: 540px;
   max-height: 600px;
   min-height: 360px;
   margin: auto;
@@ -52,18 +54,18 @@ const Div = styled.div `
 }
 
 .fontname{
-  font-size: clamp(20px, 2.1vw, 30px);
+  font-size: min(4.5vh, 30px);
   transform: translate(0, 25%);
 }
 
 
 .fontsab{
-  font-size: clamp(15px, 1.4vw, 20px);
+  font-size: min(3vh, 20px);
   transform: translate(0, -10px);
 }
 
 .fontb{
-  font-size: clamp(15px, 1.4vw, 20px);
+  font-size: min(3vh, 20px);
   transform: translate(0, 0);
 }
 
@@ -82,14 +84,14 @@ const ConceptSliderDesktop = () => {
       <img src={require("./Images/image9.jpg")} alt="image1" className="image9"></img>
       <div className="text_box">
         <div className="color_box">
-        <h1 className="text-uppercase fontname">中村 祐介</h1>
-        <h1 className="fontsab">nakamura yusuke</h1>
-        <h1 className="fontb">1997 11 広島県生まれ</h1>
-        <h1 className="fontb">2020 3 広島工業大学建築デザイン学科 卒業</h1>
-        <h1 className="fontb">2020 4 <a href="https://vuild.co.jp/" className = "atag">VUILD株式会社</a> 入社</h1>
-        <h1 className="fontb">2020 5 MORILABで<a href="https://mochitsu-motaretsu.morilab.xyz/" className = "atag">モチツモタレツ</a> 活動開始</h1>
-        <h1 className="fontb">2020 7 webサイトBOTANを独学で作成</h1>
-        <h1 className="fontb">2020 11 プロダクト作品をBOTANshopにて販売開始</h1>
+          <h1 className="text-uppercase fontname">中村 祐介</h1>
+          <h1 className="fontsab">nakamura yusuke</h1>
+          <h1 className="fontb">1997 11 広島県生まれ</h1>
+          <h1 className="fontb">2020 3 広島工業大学建築デザイン学科 卒業</h1>
+          <h1 className="fontb">2020 4 <a href="https://vuild.co.jp/" className = "atag">VUILD株式会社</a> 入社</h1>
+          <h1 className="fontb">2020 5 MORILABで<a href="https://mochitsu-motaretsu.morilab.xyz/" className = "atag">モチツモタレツ</a> 活動開始</h1>
+          <h1 className="fontb">2020 7 webサイトBOTANを独学で作成</h1>
+          <h1 className="fontb">2020 11 プロダクト作品をBOTANshopにて販売開始</h1>
       </div>
       </div>
     </div>
