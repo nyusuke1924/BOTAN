@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>sessionStorage.redirect=location.href;</script>
+        <script>
+            // location.href を SessionStorage に記録しておく
+            sessionStorage.redirect = location.href;
+        </script>
+        <meta http-equiv="refresh" content="0;URL=./">
+
+        <script>
+            // Web サイトをサブディレクトリに配置するなら、この値を 1 にする。
+            const SEGMENT_COUNT = 0;
+
+            const loc = window.location
+            const origin = loc.origin;  //=> https://yourname.github.io
+            const path = loc.href.substr(origin.length + 1);  //=> repo-name/book/123
+            const segments = path.split('/');  //=> [repo-name, book, 123]
+            const repo = segments.slice(0, SEGMENT_COUNT).join('/');  //=> repo-name
+            const param = segments.slice(SEGMENT_COUNT).join('/');  //=> book/123
+            const url = origin + '/' + repo + '?p=' + encodeURIComponent(param);
+            loc.replace(url);
+        </script>
+
+        <title>BOTAN</title>
+    </head>
+        <body>
+        </body>
+    </html>
