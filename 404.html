@@ -8,9 +8,8 @@
         <title>404</title>
 
         <script>
-            const pathname = location.pathname
-            sessionStorage.setItem('path', 'pathname');
-            location.replace(pathname);
+            sessionStorage.setItem('path', location.pathname);
+            location.replace('./');
         </script>
         
     </head>
