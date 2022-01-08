@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BOTAN/static/css/main.cf1e69c5.css",
-    "main.js": "/BOTAN/static/js/main.90744791.js",
+    "main.js": "/BOTAN/static/js/main.c0780099.js",
     "static/js/787.bd4f617c.chunk.js": "/BOTAN/static/js/787.bd4f617c.chunk.js",
     "static/media/image11.jpg": "/BOTAN/static/media/image11.cf68e13d40556c73c065.jpg",
     "static/media/image44.jpg": "/BOTAN/static/media/image44.46534ad9187d51edd06c.jpg",
@@ -54,11 +54,11 @@
     "static/media/twitter-logo.svg": "/BOTAN/static/media/twitter-logo.53378cebb66624b34ac868a07ffcd114.svg",
     "static/media/facebook-logo.svg": "/BOTAN/static/media/facebook-logo.90b58c1d2a04da9f9ed04a2a936e2800.svg",
     "main.cf1e69c5.css.map": "/BOTAN/static/css/main.cf1e69c5.css.map",
-    "main.90744791.js.map": "/BOTAN/static/js/main.90744791.js.map",
+    "main.c0780099.js.map": "/BOTAN/static/js/main.c0780099.js.map",
     "787.bd4f617c.chunk.js.map": "/BOTAN/static/js/787.bd4f617c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf1e69c5.css",
-    "static/js/main.90744791.js"
+    "static/js/main.c0780099.js"
   ]
 }
