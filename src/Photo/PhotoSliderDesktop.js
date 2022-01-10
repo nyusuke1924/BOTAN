@@ -2,6 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 var PhotoTitleList = [
+  "21.11.24",
+  "21.04.11",
+  "21.04.10",
+  "21.03.09",
   "20.09.23",
   "20.09.21",
   "20.08.13",
