@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 var ProductTitleList = [
+  "Glasses Holder",
+  "Accessory Holder",
+  "Chair",
   "Shelf",
   "Hi Stool",
   "Standing Desk",
@@ -11,12 +14,14 @@ var ProductTitleList = [
   "Tray",
   "Hanger Rack",
   "Bed",
+  "SkateBoard",
   "Lamp Stand",
   "Bench",
   "Lamp Shade",
   "PC Stand",
   "Desk",
-  "Stool"]
+  "Stool"
+]
 
 var Productlen = Object.keys(ProductTitleList).length;
 
