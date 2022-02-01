@@ -1,29 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-var ProductTitleList = [
-  "Glasses Holder",
-  "Accessory Holder",
-  "Chair",
-  "Shelf",
-  "Hi Stool",
-  "Standing Desk",
-  "Earring Case",
-  "Low Table",
-  "Desk Organizer",
-  "Tray",
-  "Hanger Rack",
-  "Bed",
-  "SkateBoard",
-  "Lamp Stand",
-  "Bench",
-  "Lamp Shade",
-  "PC Stand",
-  "Desk",
-  "Stool"
-]
+import ProductDate from './ProductDate'
+import ProductDateMap from './ProductDatemap'
 
-var Productlen = Object.keys(ProductTitleList).length;
+//var Productlen = Object.keys(ProductTitleList).length;
 
 //
 const ProductStyled = styled.div `
@@ -140,34 +121,15 @@ const ProductStyled = styled.div `
   }
 `
 
-var length = Productlen;
-var start = 0;
-var list = Array.apply(null, new Array(length)).map(function(v, i) {return start + i;});
-
-function ProductSlider () {
-
-    const ProductItems = list.map((i) =>
-      <div className="swiperslide" key={i.toString()}>
-        <div className="slideimages">
-          <img src={require("./Images/image" + [Productlen - i] + ".jpg")} alt="image1" className="image"/>
-        </div>
-        <div className="text">
-          <h1 className="font">{ProductTitleList[i]}</h1>
-        </div>
-      </div>);
-
-        return (
-            <div className="swiperwrapper">
-              {ProductItems}
-            </div>
-      )
-  };
-
   const ProductSliderDesktop = () => {
     return (
       <ProductStyled>
         <div className="swipercontainer">
-          { ProductSlider() }
+          <div className="swiperwrapper">
+            {Object.keys(ProductDate).map(key => 
+              <ProductDateMap key={key} details={ProductDate[key]} />
+            )} 
+          </div>
         </div>
     </ProductStyled>);
   };
