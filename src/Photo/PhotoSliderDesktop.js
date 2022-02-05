@@ -1,82 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
 
-var PhotoTitleList = [
-  "21.11.24",
-  "21.04.11",
-  "21.04.10",
-  "21.03.09",
-  "20.09.23",
-  "20.09.21",
-  "20.08.13",
-  "20.03.22",
-  "19.11.24",
-  "19.10.30",
-  "19.10.30",
-  "19.10.29",
-  "19.10.29",
-  "19.09.30",
-  "19.09.13",
-  "19.08.11",
-  "19.06.13",
-  "19.05.05",
-  "19.03.24",
-  "19.02.02",
-  "18.09.17",
-  "18.08.15",
-  "18.08.11",
-  "18.08.05",
-  "18.05.21",
-  "18.05.04",
-  "18.04.07",
-  "18.04.03",
-  "18.03.04",
-  "18.03.03",
-  "18.02.17",
-  "18.02.08",
-  "18.02.03",
-  "17.11.16",
-  "17.10.13",
-  "17.09.15",
-  "17.09.12",
-  "17.08.15",
-  "17.08.03",
-  "17.06.08",
-  "17.05.27",
-  "17.01.26",
-  "17.01.14"
-]
-var Photolen = Object.keys(PhotoTitleList).length;
+import PhotoDate from './PhotoDate';
+import PhotoDateMap from './PhotoDatemap'
+
+import FrontPhoto from './Images/FrontPhoto.jpg';
 
 //
 const PhotoStyled = styled.div `
+.FrontImage{
+  width: 100vw;
+  height: var(--FrontImage-Size);
+  display: block;
+  position: fixed;
+  top: var(--Header-Size);
+  right: 50%;
+  transform: translate(50%, 0);
+  background-image: url(${FrontPhoto});
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width: 768px){
+  .FrontImage{
+    height: calc(var(--FrontImage-Size)*0.6);
+  }
+}
+
 .swipercontainer{
-  width: calc(var(--Window-Size) + 10px * 3);
+  width: 100vw;
   height: -moz-available;
   height: -webkit-fill-available;
   height: fill-available;
   display: block;
   position: fixed;
-  top: 60px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  top: var(--Header-Size);
+  left: 0;
   overflow: hidden scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin: 0;
 }
-
-@media screen and (max-width: 1200px){
-  .swipercontainer{
-    width: calc(var(--Window-Size) + 10px * 2);
-    }
-  }
-
-@media screen and (max-width: 768px){
-  .swipercontainer{
-    width: calc(var(--Window-Size) + 10px * 1);
-    }
-  }
 
 .swipercontainer::-webkit-scrollbar {
     display:none;
@@ -86,15 +50,140 @@ const PhotoStyled = styled.div `
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  margin: 0px 0px 60px 0px;
+  margin:  var(--FrontImage-Size) 0px 60px 0px;
+  background-color: #e8ebeb;
+  padding-right: calc((100vw - (var(--Window-Size) + var(--GridMargin-Size) * 3))/2);
+  padding-left: calc((100vw - (var(--Window-Size) + var(--GridMargin-Size) * 3))/2);
 }
 
+@media screen and (max-width: 1200px){
+  .swiperwrapper{
+    padding-right: calc((100vw - (var(--Window-Size) + var(--GridMargin-Size) * 2))/2);
+    padding-left: calc((100vw - (var(--Window-Size) + var(--GridMargin-Size) * 2))/2);
+    }
+  }
+
+@media screen and (max-width: 768px){
+  .swiperwrapper{
+    margin-top: calc(var(--FrontImage-Size)*0.6);
+    padding-right: calc((100vw - (var(--Window-Size) + var(--GridMargin-Size) * 1))/2);
+    padding-left: calc((100vw - (var(--Window-Size) + var(--GridMargin-Size) * 1))/2);
+    }
+  }
+
+  //Scroll
+.Scroll{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px){
+  .Scroll{
+    height: calc(10vh *0.6);
+  }
+}
+
+.Scroll p{
+  font-size: 2vh;
+  display: flex;
+  writing-mode: vertical-rl;
+  position: relative;
+  top: 50%;
+  left: 0;
+  margin: 0;
+  margin-left: 50%;
+  transform: translate(0, -50%);
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+  .Scroll p{
+    font-size: calc(2vh *0.6);
+  }
+}
+
+.Arrow{
+  height: 8vh;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  z-index: 30;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  animation: 3s arrow-animation infinite;
+}
+
+@media screen and (max-width: 768px){
+  .Arrow{
+    height: calc(8vh *0.6);
+  }
+}
+
+.Arrow div{
+
+}
+
+.Arrow div::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.1rem;
+  height: 100%;
+  z-index: 30;
+  background-color: #565565;
+  border-radius: 10px;
+}
+
+.Arrow div::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.12rem;
+  height: 50%;
+  z-index: 30;
+  transform: translate(0.95vh ,4.2vh) rotate(30deg);
+  background-color: #565565;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px){
+  .Arrow div::after{
+    transform: translate(calc(0.95vh *0.6) ,calc(4.2vh *0.6)) rotate(30deg);
+  }
+}
+
+@keyframes arrow-animation {
+ 0% {
+   transform: translate(0, -10vh);
+ }
+ 40% {
+   transform: translate(0, 0);
+ }
+ 60% {
+   transform: translate(0, 0);
+ }
+ 100% {
+   transform: translate(0, 10vh);
+ }
+}
+
+//loop
 .swiperslide{
   width: calc(var(--Window-Size)/3);
   height: calc(var(--Window-Size) * 2/9);
   display: block;
   position: relative;
-  margin: 5px;
+  margin: calc(var(--GridMargin-Size)/2);
 }
 
 @media screen and (max-width: 1200px){
@@ -163,37 +252,24 @@ const PhotoStyled = styled.div `
   }
 `
 
-var length = Photolen;
-var start = 0;
-var list = Array.apply(null, new Array(length)).map(function(v, i) {return start + i;});
-
-function PhotoSlider () {
-
-    const PhotoItems = list.map((i) =>
-      <div className="swiperslide" key={i.toString()}>
-        <div className="slideimages">
-          <img src={require("./Images/image" + [Photolen - i] + ".jpg")} alt="image1" className="image"/>
-        </div>
-        <div className="text">
-          <h1 className="font">{PhotoTitleList[i]}</h1>
-        </div>
-      </div>);
-
-        return (
-            <div className="swiperwrapper">
-              {PhotoItems}
-            </div>
-      )
-  };
-
   const PhotoSliderDesktop = () => {
     return (
       <PhotoStyled>
+        <div className='FrontImage'/>
         <div className="swipercontainer">
-          { PhotoSlider() }
+          <div className="swiperwrapper">
+            <div className='Scroll'>
+              <p>Scroll</p>
+              <div className='Arrow'>
+                <div/>
+              </div>
+            </div>
+            {Object.keys(PhotoDate).map(key => 
+              <PhotoDateMap key={key} details={PhotoDate[key]} />
+            )} 
+          </div>
         </div>
     </PhotoStyled>);
   };
   
   export default PhotoSliderDesktop;
-  
