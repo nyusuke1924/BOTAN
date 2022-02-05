@@ -16,7 +16,7 @@ import bicon from './Images/base-dlogo.png';
 
 const StyleMenu = styled.nav`
   width: 100vw;
-  height: 55px;
+  height: var(--Header-Size);
   opacity: 0.8;
   background-color: #e8ebeb;
   position: fixed;

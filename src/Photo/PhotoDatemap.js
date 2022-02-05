@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductDateMap = (props) => {
+const PhotoDateMap = (props) => {
   return (
     <div className="swiperslide">
         <div className="slideimages">
@@ -16,4 +16,4 @@ const ProductDateMap = (props) => {
   )
 };
 
-export default ProductDateMap;
+export default PhotoDateMap;
