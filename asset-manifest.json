@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BOTAN/static/css/main.cf1e69c5.css",
-    "main.js": "/BOTAN/static/js/main.19e14d38.js",
+    "main.js": "/BOTAN/static/js/main.c42daca7.js",
     "static/js/787.bd4f617c.chunk.js": "/BOTAN/static/js/787.bd4f617c.chunk.js",
     "static/media/image12.jpg": "/BOTAN/static/media/image12.b03c48be2c944396246f.jpg",
     "static/media/image44.jpg": "/BOTAN/static/media/image44.46534ad9187d51edd06c.jpg",
@@ -21,6 +21,7 @@
     "static/media/image35.jpg": "/BOTAN/static/media/image35.4267849fb48c09c94567.jpg",
     "static/media/image4.jpg": "/BOTAN/static/media/image4.7154934633f4efb24d32.jpg",
     "static/media/image42.jpg": "/BOTAN/static/media/image42.d4da9ecae8c1b01652a6.jpg",
+    "static/media/FrontPhoto.jpg": "/BOTAN/static/media/FrontPhoto.8ab7c953ea37126f0d2a.jpg",
     "static/media/image16.jpg": "/BOTAN/static/media/image16.c4bbe18e7041f72d4466.jpg",
     "static/media/image23.jpg": "/BOTAN/static/media/image23.4a3c15b5e3782fd563a4.jpg",
     "static/media/image31.jpg": "/BOTAN/static/media/image31.779d86f5180e93fcc8ad.jpg",
@@ -44,6 +45,7 @@
     "static/media/image14.jpg": "/BOTAN/static/media/image14.8d679a0ee6628015c2d1.jpg",
     "static/media/image28.jpg": "/BOTAN/static/media/image28.a17f8f60766d0d52c799.jpg",
     "static/media/image17.jpg": "/BOTAN/static/media/image17.e751c25182c7092ec192.jpg",
+    "static/media/FrontProduct.jpg": "/BOTAN/static/media/FrontProduct.9669f76ea876b9d652fa.jpg",
     "static/media/image20.jpg": "/BOTAN/static/media/image20.b89216129b904f41b46b.jpg",
     "static/media/image21.jpg": "/BOTAN/static/media/image21.f3414d57d969b3db9385.jpg",
     "static/media/image24.jpg": "/BOTAN/static/media/image24.acd7b18ce32956bce401.jpg",
@@ -56,11 +58,11 @@
     "static/media/twitter-logo.svg": "/BOTAN/static/media/twitter-logo.53378cebb66624b34ac868a07ffcd114.svg",
     "static/media/facebook-logo.svg": "/BOTAN/static/media/facebook-logo.90b58c1d2a04da9f9ed04a2a936e2800.svg",
     "main.cf1e69c5.css.map": "/BOTAN/static/css/main.cf1e69c5.css.map",
-    "main.19e14d38.js.map": "/BOTAN/static/js/main.19e14d38.js.map",
+    "main.c42daca7.js.map": "/BOTAN/static/js/main.c42daca7.js.map",
     "787.bd4f617c.chunk.js.map": "/BOTAN/static/js/787.bd4f617c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf1e69c5.css",
-    "static/js/main.19e14d38.js"
+    "static/js/main.c42daca7.js"
   ]
 }
