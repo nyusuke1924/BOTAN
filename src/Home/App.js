@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import MediaQuery from "react-responsive";
-import HomeSliderDesktop from './HomeSliderDesktop';
-import HomeSliderMobile from './HomeSliderMobile';
+import HomeSlider from './HomeSlider';
 
 const Div = styled.div`
   width: 90%;
@@ -18,12 +16,7 @@ const Div = styled.div`
 const HomeApp = () => {
   return (
     <Div className="App">
-      <MediaQuery query="(max-width: 768px)">
-        <HomeSliderMobile/>
-      </MediaQuery>
-      <MediaQuery query="(min-width: 769px)">
-        <HomeSliderDesktop/>
-      </MediaQuery>
+      <HomeSlider/>
     </Div>
   );
 };
